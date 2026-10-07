@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blaire's Mobile Bar</title>
+    <title>About Us & FAQs | Blaire's Mobile Bar</title>
     
     <!-- Meta Pixel Code -->
     <script>
@@ -27,7 +27,6 @@
 </head>
 <body>
 
-    <!-- Navigation Header -->
     <header style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(140, 115, 121, 0.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: space-between; padding: 15px 40px; box-sizing: border-box; font-family: Georgia, serif; border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
         
         <!-- Styled Button -->
@@ -73,84 +72,83 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero" style="text-align: center; padding: 100px 20px; background-image: url('Images/Home banner background.png'); background-size: cover; background-position: center;">
+        <section class="hero" style="position: relative; height: 450px; background-image: url('Images/about us page top banner.png'); background-size: cover; background-position: center; margin-top: 0;">
             
-            <!-- Adding the top 3 martinis graphic -->
-            <img src="Images/Three martinis from home banner.png" alt="Martinis" style="position:relative; left: 100px; margin-bottom: 0px;">
+            <!-- Overlapping Colored Glasses (Moved further right and lowered) -->
+            <img src="Images/about us colored glasses.png" alt="Colored Martini Glasses" style="position: absolute; bottom: -160px; left: 78%; width: 280px; z-index: 10; pointer-events: none;">
             
-
-            <a href="quote.html" class="btn" onclick="fbq('track', 'Contact');" style="position:relative; bottom: -75px; left: -200px;">Book Now</a>
         </section>
 
-        <!-- Intro Section (Let's Raise the Bar) -->
-        <section style="padding: 100px 20px; overflow: hidden;">
-            <div style="position: relative; max-width: 950px; margin: 0 auto;">
-                
-                <!-- Left Disco Ball Graphic -->
-                <img src="Images/Disco Ball.png" alt="Disco Ball Graphic" style="position: absolute; left: -180px; top: 50%; transform: translateY(-50%); width: 420px; z-index: 3; pointer-events: none;">
-                
-                <!-- Right Drinks Graphic -->
-                <img src="Images/Drink on let's raise the bar.png" alt="Drinks Graphic" style="position: absolute; right: -120px; top: 50%; transform: translateY(-50%); width: 320px; z-index: 3; pointer-events: none;">
-                
-                <!-- The White Card -->
-                <div class="white-card" style="margin: 0; position: relative; z-index: 2; padding: 60px 40px;">
+        <!-- About Section (Pink Background using single Canva image) -->
+        <section style="background-color: var(--bg-pink); padding: 160px 20px 80px 20px; text-align: center;">
+            <img src="Images/about us page - bar plus about us.png" alt="About Blaire" style="max-width: 1000px; width: 100%; height: auto;">
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 80px 20px; gap: 60px;">
+            
+            <!-- Left Side: Title and Image -->
+            <div style="flex: 1; min-width: 350px;">
+                <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 14px; color: gray; margin-bottom: 5px; font-weight: bold;">FAQ</p>
+                <h2 style="font-size: 54px; margin-top: 0; color: var(--nav-dark); font-weight: normal; margin-bottom: 30px;">Good to Know</h2>
+                <img src="Images/about us strawberry.png" alt="Strawberry Cocktail" style="width: 100%; max-width: 450px; box-shadow: none;">
+            </div>
+
+            <!-- Right Side: Accordions (Matching exact text from screenshot) -->
+            <div style="flex: 2; min-width: 500px;">
+                <div style="border-top: 2px solid #e0e0e0; border-bottom: 2px solid #e0e0e0; padding: 20px 0;">
                     
-                    <div style="max-width: 500px; margin: 0 auto; position: relative; z-index: 4;">
-                        <!-- Mini Bar Cart Icon -->
-                        <img src="Images/Mini Bar Cart home page.png" alt="Bar Cart Icon" style="width: 50px; margin-bottom: 15px;">
-                        
-                        <h2 style="font-size: 45px; color: #d16b8a; font-style: italic; margin-top: 0; margin-bottom: 25px;">Let's Raise the Bar!</h2>
-                        <p style="font-size: 15px; line-height: 1.7;">Your event deserves more than a bar. It deserves an experience. From handcrafted cocktails and custom menus to a beautiful mobile bar setup and friendly bartenders, Blaire's Mobile Bar brings everything you need to make your celebration feel effortless, personal, and unforgettable. You enjoy the party. We'll handle the drinks.</p>
-                    </div>
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">What is a mobile bar?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">A mobile bar is a fully portable bar experience that brings professional bartending services directly to your event. We handle the setup, service, and cleanup so you can focus on celebrating. We are fully insured and all of our bartenders are TABC-certified!</p>
+                    </details>
+
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">Do you provide the alcohol?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">No. Blaire's Mobile Bar is a dry hire service, meaning you'll purchase the alcohol while we provide the bartenders, bar setup, service, and expertise. Of course, we can help you determine how much alcohol to buy and recommend different types and pick up an order for you!</p>
+                    </details>
+
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">How many bartenders will we need?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">For most weddings, one bartender can comfortably serve up to 75 guests. For larger celebrations, we will need an additional bartender (+1 per 75 guests) to ensure quick service and shorter wait times.</p>
+                    </details>
+
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">How far in advance should I book?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">For summer and fall weddings, we recommend at least 10 months in advance. We only service 3 events per day on the weekend, so booking sooner is better!</p>
+                    </details>
                     
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">Do you offer non-alcoholic options?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">Yes! We can create mocktails and other non-alcoholic beverage experiences so every guest can enjoy something special.</p>
+                    </details>
+
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">What happens after I submit an inquiry?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">We'll reach out to learn more about your event, discuss your vision, answer any questions, and create a custom quote tailored to your celebration!</p>
+                    </details>
+
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">What types of events do you serve?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">We cater weddings, corporate events, private parties, birthday celebrations, anniversaries, fundraisers, festivals, and other special occasions. Just about anything, we can do!</p>
+                    </details>
+
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">Do you have a minimum for weddings?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">No! We have a base package starting at $850 and then everything is priced per person going to your event as well as any additional add-ons that you'd like for your event :)</p>
+                    </details>
+
+                    <details style="margin-bottom: 20px;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">What comes with your mobile bar packages?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">Our Base Package includes a full bar setup, premium cups and garnishes, one professional bartender, and fully insured service. Setup, service, and cleanup are all included, so you can focus on celebrating while we keep the drinks flowing. For events with more than 75 guests, an additional bartender is required to ensure smooth and efficient service :)</p>
+                    </details>
+
+                    <details style="margin-bottom: 0;">
+                        <summary style="color: #d16b8a; font-weight: bold; font-size: 18px; margin-bottom: 5px; cursor: pointer;">How much space do you need?</summary>
+                        <p style="margin-top: 5px; color: #2a2d5a; line-height: 1.6;">Our setup requires a flat, accessible area large enough for the bar and service space. We'll review your event location during the planning process to ensure a seamless setup!</p>
+                    </details>
+
                 </div>
-            </div>
-        </section>
-
-        <!-- What it's Like Section (Exact 1-to-1 Canva Match) -->
-        <section style="padding: 60px 20px; background-image: url('Images/background for what its like.png'); background-size: cover; background-position: center;">
-            
-            <!-- Fixed canvas container to lock all coordinates exactly like Canva -->
-            <div style="position: relative; max-width: 1000px; height: 650px; margin: 0 auto;">
-                
-                <!-- The White Card (Top Left) -->
-                <div class="white-card" style="margin: 0; position: absolute; top: 20px; left: 20px; width: 480px; text-align: left; padding: 40px; z-index: 2; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-                    <h2 style="font-size: 38px; line-height: 1.1; margin-top: 0; margin-bottom: 20px; color: var(--nav-dark); font-weight: normal;">
-                        What having Blaire's Mobile<br>Bar at your event is like
-                    </h2>
-                    <!-- Exact line breaks and pink text added to match screenshot -->
-                    <p style="color: #d16b8a; font-size: 15px; line-height: 1.6; margin-bottom: 0; font-weight: 400;">
-                        Enjoy your event while we handle the bar. From setup and<br>
-                        bartending to handcrafted cocktails, mixers, garnishes, ice, and<br>
-                        cleanup, Blaire's Mobile Bar brings a seamless bar experience to<br>
-                        weddings, parties, and events across DFW, ATX, HTX.
-                    </p>
-                </div>
-                
-                <!-- The Polaroids -->
-                <img src="Images/home triple image - what its like.png" alt="Polaroid Collage" style="position: absolute; right: -100px; top: 20px; width: 550px; z-index: 3; pointer-events: none;">
-                
-                <!-- The Olive Stick -->
-                <img src="Images/Olive stick what's it like having.png" alt="Olive Graphic" style="position: absolute; left: -150px; bottom: -30px; width: 500px; z-index: 4; pointer-events: none;">
-                
-                <!-- The Pink Pills and Arrows -->
-                <img src="Images/graphics for -what its like.png" alt="Labels and Arrows" style="position: absolute; left: 360px; bottom: 70px; width: 720px; z-index: 5; pointer-events: none;">
-                
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section class="reviews-section" style="position: relative; overflow: hidden; padding-bottom: 60px;">
-            <div style="max-width: 1200px; margin: 0 auto 30px; position: relative; z-index: 2;">
-                <h2 style="font-size: 48px; text-align: left; color: var(--nav-dark); font-weight: normal;">From Our Clients</h2>
-            </div>
-            
-            <!-- This is the giant pink line-art cocktail behind the reviews -->
-            <img src="Images/Martini Glasses from Our Clients.png" alt="Martini Line Art" style="position: absolute; right: -50px; top: -50px; height: 120%; opacity: 0.3; z-index: 1; pointer-events: none;">
-
-            <!-- The single exported Canva image for all the review boxes -->
-            <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
-                <img src="Images/Reviews from our homepage.png" alt="Client Reviews" style="width: 100%;">
             </div>
         </section>
     </main>

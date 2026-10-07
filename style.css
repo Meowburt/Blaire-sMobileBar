@@ -1,0 +1,426 @@
+/* --- GLOBAL STYLES --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --bg-pink: #fcbcd4; /* Your exact Canva pink */
+    --nav-dark: #2a2d5a; /* Your exact text color */
+    --text-dark: #2a2d5a; /* Your exact text color */
+    --button-pink: #d16b8a; /* Keeping the button slightly darker for contrast */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-pink);
+    color: var(--text-dark);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: var(--nav-dark);
+}
+
+/* --- NAVIGATION --- */
+header {
+    background-color: var(--nav-dark);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- BUTTONS --- */
+.btn {
+    background-color: var(--button-pink);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px; /* Pill shape */
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #b55a75;
+}
+
+/* --- WHITE CARDS --- */
+.white-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--bg-pink);
+    border-top: 1px solid #eba5bd;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+/* --- SPLIT LAYOUTS (For About & FAQ pages) --- */
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.split-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.split-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.split-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+/* --- FAQ ACCORDIONS --- */
+.faq-section {
+    background-color: white;
+    padding: 60px 20px;
+}
+
+details {
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--bg-pink);
+    padding-bottom: 10px;
+}
+
+summary {
+    font-weight: 600;
+    color: var(--button-pink);
+    cursor: pointer;
+    list-style: none; /* Hides default arrow in some browsers */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+summary::before {
+    content: "→"; /* Replicates your Canva arrow */
+    font-size: 18px;
+}
+
+details p {
+    padding-left: 28px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* --- INQUIRY FORM --- */
+.form-container {
+    background-color: var(--bg-pink);
+    padding: 60px 20px;
+}
+
+.custom-form {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+/* --- SERVICES / WHAT'S INCLUDED GRID --- */
+.included-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.included-item {
+    background-color: #f7ede8; /* Light tan color from Canva */
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* --- PHOTO GALLERY GRID --- */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* --- REVIEWS SECTION --- */
+.reviews-section {
+    background-color: white;
+    padding: 80px 20px;
+    position: relative; /* Allows positioning of the background graphic */
+    overflow: hidden;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2; /* Keeps text above the background graphic */
+}
+
+.review-card {
+    background-color: #ff99b8; /* The darker pink for the review boxes */
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--nav-dark);
+    font-size: 12px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-stars {
+    color: gold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+/* =========================================
+   MOBILE RESPONSIVENESS FIXES (FINAL)
+   ========================================= */
+@media (max-width: 850px) {
+    
+    /* 1. COMPACT FIXED HEADER (Follows you as you scroll!) */
+    header {
+        position: fixed !important;
+        padding: 10px 15px !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+        background-color: rgba(140, 115, 121, 0.98) !important; /* Slightly darker so it's easy to read over scrolling text */
+    }
+    
+    /* Hide socials on mobile so the header doesn't cover half the phone screen */
+    .socials-partners {
+        display: none !important; 
+    }
+    
+    .nav-links {
+        gap: 15px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    .nav-links a {
+        font-size: 14px !important;
+    }
+
+    header .btn {
+        font-size: 13px !important;
+        padding: 6px 16px !important;
+    }
+
+    /* Add space to the top of the page so the fixed header doesn't cover your Hero sections */
+    main {
+        padding-top: 100px !important;
+    }
+
+    /* 2. FIX JAGGED TEXT (Ignores desktop line-breaks on mobile) */
+    h1 br, h2 br, p br {
+        display: none !important;
+    }
+
+    /* 3. LAYOUT BLOCKS & CARDS */
+    div[style*="min-width: 400px"],
+    div[style*="min-width: 450px"],
+    div[style*="min-width: 350px"],
+    div[style*="min-width: 300px"] {
+        min-width: 100% !important;
+    }
+    
+    section > div, .white-card {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 25px 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    div[style*="width: 480px"] {
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        position: relative !important;
+    }
+
+    /* Un-fix the "What it's like" section height */
+    div[style*="height: 650px"] {
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 20px 0 !important;
+    }
+
+    /* 4. FIX GRIDS */
+    div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* 5. TYPOGRAPHY SCALING */
+    h1 { font-size: 36px !important; }
+    h2 { font-size: 28px !important; }
+    p { font-size: 15px !important; }
+
+    /* 6. FAQ ACCORDION FIXES */
+    summary {
+        align-items: center !important;
+    }
+    summary p {
+        font-size: 15px !important;
+        line-height: 1.3 !important;
+    }
+    summary div {
+        padding-top: 0 !important; 
+    }
+    summary svg {
+        width: 20px !important;
+        height: 20px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* 7. IMAGES & GRAPHICS */
+    video {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Home page specific overrides */
+    .hero img {
+        left: 0 !important;
+        max-width: 100% !important;
+        margin: 0 auto 20px !important;
+    }
+    
+    .hero a.btn {
+        left: 0 !important;
+        bottom: 0 !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Center and scale the Polaroids */
+    img[alt="Polaroid Collage"] {
+        position: relative !important;
+        right: 0 !important;
+        top: 0 !important;
+        max-width: 90% !important;
+        margin: 20px auto 0 !important;
+        display: block !important;
+    }
+
+    /* Hide messy background floating graphics on mobile to keep it perfectly clean */
+    img[alt="Olive Graphic"],
+    img[alt="Labels and Arrows"],
+    img[alt="Disco Ball Graphic"],
+    img[alt="Drinks Graphic"] {
+        display: none !important;
+    }
+
+    /* Hide all background watermarks on mobile for a clean, readable look */
+    img[alt="Champagne Flutes"],
+    img[alt="Balloons"],
+    img[alt="Bar tools"],
+    img[alt="Drinks Illustration"],
+    img[alt="Martini Line Art"] {
+        display: none !important;
+    }
+
+    /* 8. FOOTER FIXES */
+    footer > div {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    footer > div > div {
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+}
