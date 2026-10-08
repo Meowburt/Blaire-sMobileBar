@@ -23,6 +23,23 @@
     src="https://www.facebook.com/tr?id=1625877711459147&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- Referral Tracking Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // 1. Check the URL for a tracking tag
+      const urlParams = new URLSearchParams(window.location.search);
+      const source = urlParams.get('utm_source');
+
+      // 2. If a source is found, tell Facebook!
+      if (source) {
+          // Fire a custom event to your Meta Pixel
+          fbq('trackCustom', 'PlatformReferral', { referral_site: source });
+          
+          // Save this to the browser so we remember how they got here
+          sessionStorage.setItem('vendor_source', source);
+      }
+  });
+</script>
 
     <link rel="stylesheet" href="style.css">
 </head>
